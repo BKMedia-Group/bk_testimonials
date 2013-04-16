@@ -9,9 +9,8 @@ Gem::Specification.new do |s|
   s.version     = BkTestimonials::VERSION
   s.authors     = ["Josh Horner"]
   s.email       = ["josh@bkmediagroup.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of BkTestimonials."
-  s.description = "TODO: Description of BkTestimonials."
+  s.summary     = "Summary of BkTestimonials."
+  s.description = "Description of BkTestimonials."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
