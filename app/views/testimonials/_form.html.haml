@@ -1,0 +1,24 @@
+= form_for @testimonial do |f|
+  = render 'error_messages'
+  .row-fluid
+    .span4
+      %p
+        = f.label :name
+        = f.text_field :name
+      %p
+        = f.label :company
+        = f.text_field :company
+      %p
+        = f.label :position
+        = f.text_field :position
+      %p
+        = f.label :published
+        = f.check_box :published
+    .span8
+      %p
+        = f.label :body
+        = f.text_area :body, style: 'width: 100%', rows: '5'
+  .row-fluid
+    .span12
+      = f.submit "#{f.object.new_record? ? 'Create' : 'Update'} Testimonial"
+      = link_to 'Cancel', manage_testimonials_path

@@ -1,0 +1,9 @@
+%tr
+  %td= manage_testimonial.name
+  %td= manage_testimonial.position
+  %td= manage_testimonial.company
+  %td= manage_testimonial.body
+  %td= manage_testimonial.published ? 'Yes' : 'No'
+  %td
+    = link_to 'Edit', edit_testimonial_path(manage_testimonial), class: 'btn btn-small'
+    = link_to 'Delete', manage_testimonial, method: 'delete', data: {confirm: 'You sure?'}, class: 'btn btn-small btn-danger'

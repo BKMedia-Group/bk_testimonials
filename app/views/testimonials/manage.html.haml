@@ -1,0 +1,13 @@
+%h1 Manage Testimonials
+%p
+  = link_to 'New Testimonial', new_testimonial_path, class: 'btn btn-primary'
+%table.table.table-striped.table-bordered
+  %thead
+    %tr
+      %th Name
+      %th Position
+      %th Company
+      %th Body
+      %th Published
+      %th
+  %tbody= render partial: 'manage_testimonial', collection: @testimonials
