@@ -4,7 +4,7 @@ class TestimonialsController < ApplicationController
   before_filter :is_admin, except: [:index]
 
   def index
-    @testimonials = Testimonial.all
+    @testimonials = Testimonial.paginate page: params[:page], per_page: 10
   end
   def new
     @testimonial = Testimonial.new
